@@ -24,6 +24,7 @@
 	.enhanced {
 		width: 100%;
 		height: auto;
+		margin-block: 2rem;
 	}
 	.container {
 		width: 90%;
