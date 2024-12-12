@@ -1,9 +1,7 @@
 <script>
 	// @ts-nocheck
 
-	// import MyImage from '$lib/imageDump/2008-07-01-170627.jpg?enhanced';
-
-	const imageModules = import.meta.glob('$lib/imageDir /*.jpg', {
+	const imageModules = import.meta.glob('$lib/imageDumps/jeannette/*.jpg', {
 		eager: true,
 		query: {
 			enhanced: true
@@ -11,6 +9,7 @@
 	});
 </script>
 
+Hello
 <div class="container">
 	{#each Object.entries(imageModules) as [_path, module]}
 		<enhanced:img src={module.default} alt="some alt text" class="enhanced" />
