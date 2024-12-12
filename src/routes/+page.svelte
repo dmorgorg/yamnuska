@@ -9,7 +9,6 @@
 	});
 </script>
 
-Hello
 <div class="container">
 	{#each Object.entries(imageModules) as [_path, module]}
 		<enhanced:img src={module.default} alt="some alt text" class="enhanced" />
